@@ -1,3 +1,4 @@
+package com.mycompany.Procedenciadeoperaciones;
 package Procedenciadeoperaciones;
 
 import java.util.Scanner;
