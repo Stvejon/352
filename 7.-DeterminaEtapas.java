@@ -1,43 +1,46 @@
 package com.mycompany.DeterminaEtapas;
-package DeterminaEtapas;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+import java.util.Scanner;
 public class DeterminaEtapas {
-    public static void main(String[] args)throws IOException{ 
-        //Declaracion de variables
-        int numero;
+static int Edades = 0;
+
+        public static void main(String[] args) {
+        Solicitar();
+        Edades();
+    }
+        public static void Solicitar(){
         
-        BufferedReader bufEntrada = new BufferedReader (new InputStreamReader (System.in));
-                // Entrada de datos
-                System.out.println("Dame el numero");
-                numero = Integer.parseInt(bufEntrada. readLine ());
-                                   
-                if(numero<10 && numero>=1)
-                { 
-                    System.out.println("Es de una cifra");
-                }
-                else if (numero<100 && numero>=10)
-                {
-                   System.out.println("Es de 2 cifras"); 
-                }
-               else if (numero<1000 && numero>=100)
-               {
-                System.out.println("Es de 3 cifras");   
-               }
-               else if (numero<=10000 && numero>=1000)
-               {
-                System.out.println("Es de 4 cifras");   
-               }
-               else if (numero<100000 && numero>=10000)
-               {
-                System.out.println("Es de 5 cifras");   
-               }
-               else if (numero<=0) 
-               {
-                System.out.println("No hay numeros menores a 0");   
-               } 
-  }
+           Scanner save =new Scanner(System.in);
+           
+           System.out.println("Colcar tu edad:");
+           
+           Edades = save.nextInt();
+    }
+        public static void Edades(){
+        //mayor a 0 años, pero menor a o igual a 9 infante
+        if (Edades<=9 && Edades >=0  )
+        {
+           System.out.println("Eres un infante");  
+        }
+        //Mayor o igual a 10 años o igual o menor a 14 es pequeño
+        if (Edades<=14 && Edades>=10)
+        {
+           System.out.println("Eres un niño pequeño");  
+        }
+        //Mayor o igual a 14 pero 29 años o menor adolecnete
+        if (Edades>=14 && Edades <=29)
+        {
+           System.out.println("Eres un adolecente");  
+        }
+        //Mayor o igual a 30 años pero menor o igual a 79 adulto mayor
+        if (Edades>=30 && Edades <=79)
+        {
+           System.out.println("Adulto mayor");  
+        }    
+        // mayor o igual  a 80 abuelo
+        if (Edades>=80)
+        {
+           System.out.println("Abuelito");  
+        }    
+    }
 }
+
