@@ -1,3 +1,4 @@
+package com.mycompany.CifrasNumero;
 import java.util.Scanner;
 
 public class CifrasNumero {
