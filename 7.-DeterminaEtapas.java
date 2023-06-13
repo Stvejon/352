@@ -1,11 +1,11 @@
-package com.mycompany.CiFrasNumero;
-package programacion9;
+package com.mycompany.DeterminaEtapas;
+package DeterminaEtapas;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class CiFrasNumero {
+public class DeterminaEtapas {
     public static void main(String[] args)throws IOException{ 
         //Declaracion de variables
         int numero;
